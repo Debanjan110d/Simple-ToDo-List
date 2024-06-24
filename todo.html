@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do List</title>
+		<link rel="stylesheet" href="todo.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<h1>To Do List</h1>
+			<div class="wrap-input-9">
+				<input class="input" type="text" placeholder="Name" id="title" />
+				<span class="focus-border">
+					<i></i>
+				</span>
+			</div>
+			<div class="wrap-input-9">
+				<input
+					class="input"
+					type="text"
+					placeholder="What To Do"
+					id="description"
+				/>
+				<span class="focus-border">
+					<i></i>
+				</span>
+			</div>
+
+			<button id="btn">Save</button>
+
+			<ol id="list-group"></ol>
+		</div>
+
+		<script src="todo.js"></script>
+	</body>
+</html>
