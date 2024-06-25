@@ -80,6 +80,7 @@
 .wrap-input-9 .input:focus ~ .focus-border i:after {
 	transition-delay: 0.4s;
 }
+
 #btn {
 	background-color: #6c5dd3;
 	color: #fff;
@@ -95,7 +96,76 @@
 	background-color: #5247b3;
 }
 
+#deleteButton {
+	background-color: #6c5dd3;
+	height: fit-content;
+	color: #fff;
+	margin-left: auto;
+	margin-top: 0.9%;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
 h1 {
 	text-align: center;
 	color: #6c5dd3;
+}
+
+li {
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	background-color: #f5f6fd;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	overflow-y: auto;
+}
+
+#list-group {
+	width: 90vw;
+	height: fit-content;
+	overflow-y: auto;
+	overflow-x: auto;
+	border: #6c5dd3 2px solid;
+	margin: auto;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#huha {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and mobiles) */
+@media only screen and (max-width: 768px) {
+	#btn {
+		align-self: center;
+		margin-bottom: 30px;
+		margin-left: 41vw;
+	}
+	#deleteButton {
+		margin-left: 20px;
+	}
+	#list-group {
+		width: 80vw;
+		height: 40vh;
+	}
+	li {
+		padding: 5px;
+		margin: 5px;
+	}
+}
+
+ol li {
+	list-style: decimal;
 }

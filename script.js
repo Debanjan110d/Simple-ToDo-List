@@ -10,13 +10,13 @@ let todoListStorage = JSON.parse(localStorage.getItem("todoList"));
 if (todoListStorage) {
 	todoList = todoListStorage;
 	todoList.forEach((todo) => {
-		newListItem = `<li>${todo.title}: ${todo.description}</li>`;
+		newListItem = `<div id="huha"><li>${todo.title}: ${todo.description}</li> <button id="deleteButton">Delete</button></div>`;
 		todoListHtml += newListItem;
 	});
 	listGroup.innerHTML = todoListHtml;
 }
 
-btn.onclick = function () {
+btn.onclick = () => {
 	todo = document.getElementById("title").value;
 	description = document.getElementById("description").value;
 	todoList.push({ title: todo, description: description });
@@ -24,3 +24,9 @@ btn.onclick = function () {
 	newListItem = `<li>${todo}: ${description}</li>`;
 	listGroup.innerHTML += newListItem;
 };
+
+deleteButton.onclick = () => {
+	document.getElementById("title").value.remove();
+};
+
+console.log(todoList[1]);
