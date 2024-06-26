@@ -96,52 +96,37 @@
 	background-color: #5247b3;
 }
 
-#deleteButton {
-	background-color: #6c5dd3;
-	height: fit-content;
-	color: #fff;
-	margin-left: auto;
-	margin-top: 0.9%;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
-}
-
 h1 {
 	text-align: center;
 	color: #6c5dd3;
 }
 
-li {
-	width: fit-content;
-	height: fit-content;
+#list-group {
+	width: 75vw;
+	height: 40vh;
+	padding-top: 9px;
+	overflow-y: auto;
+	margin: auto;
+	border: #6c5dd3 3px solid;
+}
+
+.each-list {
 	padding: 10px;
 	margin: 10px;
+	border: 1px solid #6c5dd3;
 	border-radius: 5px;
-	background-color: #f5f6fd;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	overflow-y: auto;
 }
 
-#list-group {
-	width: 90vw;
-	height: fit-content;
-	overflow-y: auto;
-	overflow-x: auto;
-	border: #6c5dd3 2px solid;
-	margin: auto;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-#huha {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+.deleteButton {
+	background-color: #6c5dd3;
+	color: #fff;
+	padding: 5px 10px;
+	margin-left: 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 /* Media queries for responsiveness */
@@ -153,7 +138,7 @@ li {
 		margin-bottom: 30px;
 		margin-left: 41vw;
 	}
-	#deleteButton {
+	.deleteButton {
 		margin-left: 20px;
 	}
 	#list-group {
